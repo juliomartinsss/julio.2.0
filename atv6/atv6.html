@@ -5,18 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>atividade6</title>
     <script>
+        function raizQuadrada(numero){
+            raiz=Math.sqrt(numero);
+            alert("a raiz quadrada de " + numero+" é igual a "+raiz)
+
+        }
         function jabuti(texto){
             texto = prompt('digite um texto')
             document.getElementById("minhaDiv").innerHTML = texto;                
-                alert(raiz)
+                alert(texto)
         }
-        var raiz = math.sqrt(arg);
+        function escreverDiv(){
+                texto = prompt('digite um texto qualquer');
+                document.getElementById("minhaDiv2").innerHTML = texto;
+
+        }
     </script>
 
 </head>
 <body>
-    <h2>RAIZ QUADRADA</h2>
-    <button onclick="jabuti('<h1> progamacao julio</h1>')">escrever</button> <br> <br>
-    <div id="minhaDiv"></div>
+    <h1>RAIZ QUADRADA</h1>
+    <button onclick="raizQuadrada(25)">raiz de 25</button>
+    <button onclick="raizQuadrada(36)">raiz de 36</button>
+    <button onclick="raizQuadrada(49)">raiz de 49</button> <br><br>
+
+    <h1>Escrevendo na div</h1>
+    <button onclick="jabuti('<h1> progamacao julio</h1>')">escrever</button>
+    <div id="minhaDiv"></div> <br> <br>
+
+    <h1>escrevendo na texto dinamico</h1>
+    <button onclick="escreverDiv('<h1> progamacao julio</h1>')">escrever</button>
+    <div id="minhaDiv2"></div>
+
 </body>
 </html>
