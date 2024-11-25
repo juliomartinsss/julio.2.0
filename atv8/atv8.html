@@ -21,8 +21,10 @@
                 var tag = '<h5>' + i + ' - ' + linguagens[i] + '</h5>';
 
                 container.innerHTML += tag;
+            
             }
         }
+
 
         function posicaolinguagens(){
             var indice = prompt('Qual posição da lista deseja consultar?');
@@ -45,14 +47,24 @@
 
             alert(frutas[indice]);
         }
-
+        function apagarescrita(){
+            document.getElementById ('minhaDiv').innerHTML = "";
+            var form = document.querySelector('form');
+            if (form) {
+                form.reset();
+            }
+        }
     </script>
 </head>
 <body>
     <h1>array de linguagens</h1>
 
-    <button onclick="mostrarlistaslinguagens()">Criar array</button> <br> <br>
+    <button onclick="mostrarlistaslinguagens()">Criar array</button>
+
+    <button id="apagar" onclick="apagarescrita()">limpar</button> <br> <br>
+
     <button onclick="posicaolinguagens()">Criar array</button> <br> <br>
+
     <br>
     <h1>array frutas</h1>
 
