@@ -3,62 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>arrays</title>
-    <script>
-        let linguagens = Array();
-
-        linguagens[0]= 'dart';
-        linguagens[1] = 'PHP';
-        linguagens[2] = 'Java';
-        linguagens[3] = 'phyton';
-        linguagens[4] = 'perl';
-        linguagens[5] = 'ruby';
-        linguagens[6] = 'C ++'
-
-        function mostrarlistaslinguagens(){
-            const container = document.getElementById('minhaDiv');
-            for (var i = 0; i < linguagens.length; i++){
-                var tag = '<h5>' + i + ' - ' + linguagens[i] + '</h5>';
-
-                container.innerHTML += tag;
-            }
-        }
-
-        function posicaolinguagens(){
-            var indice = prompt('Qual posição da lista deseja consultar?');
-
-            alert(linguagens[indice]);
-        }
-        
-        var frutas = ['maçã','banana','caju','morango','bacaxi','goiaba']
-
-        function mostrarlistasfrutas(){
-            const container = document.getElementById('minhaDiv');
-            for (var i = 0; i < frutas.length; i++){
-                var tag = '<h5>' + i + ' - ' + frutas[i] + '</h5>';
-
-                container.innerHTML += tag;
-            }
-        }
-        function posicaofrutas(){
-            var indice = prompt('Qual posição da lista deseja consultar?');
-
-            alert(frutas[indice]);
-        }
-
-    </script>
+    <title>desafio</title>
+    <script src="julio.js"></script>
 </head>
 <body>
-    <h1>array de linguagens</h1>
-
-    <button onclick="mostrarlistaslinguagens()">Criar array</button> <br> <br>
-    <button onclick="posicaolinguagens()">Criar array</button> <br> <br>
-    <br>
-    <h1>array frutas</h1>
-
-    <button onclick="mostrarlistasfrutas()">mostrar</button><br><br>
-    <button onclick="posicaofrutas()">Criar array</button> <br> <br>
-    <div id="minhaDiv"></div>
-
+    <button onclick="julioDiv('<h1>inteiros')">mostar</button>
+    <div id="div"></div>
 </body>
 </html>
